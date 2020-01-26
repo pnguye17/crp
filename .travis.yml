@@ -25,8 +25,8 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $token
-  github-username: $username
-  github-password: $password
+  github-username: 'pnguye17'
+  github-password: 'Pn0242862'
   keep-history: true
   local-dir: ./build
   on:
