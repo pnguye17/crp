@@ -1,0 +1,33 @@
+language: node_js
+node_js:
+ - "12.13.1"
+
+branches:
+  only:
+    - master
+
+addons:
+  chrome: stable
+
+before_script:
+  - npm install
+  - npm install gh-pages 
+
+cache:
+  npm: true
+  directories:
+    - node_modules
+
+script:
+  - npm run deploy
+
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  github-username: $username
+  github-password: $password
+  keep-history: true
+  local-dir: ./build
+  on:

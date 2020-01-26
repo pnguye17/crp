@@ -6,7 +6,13 @@ class Navbar extends Component {
      return (
         <Nav>
 
-            <li> Hello</li>
+            <li> Home </li>
+            <li> About Us</li>
+            <li> Services Offered</li>
+            <li> Meet the Teams</li>
+            <li> Training Offered</li>
+            <li> Contact Us</li>
+            
         </Nav>
 
 
