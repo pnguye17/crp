@@ -1,26 +1,15 @@
 language: node_js
 node_js:
- - "12.13.1"
-
-addons:
-  chrome: stable
-
-before_script:
-  - npm install gh-pages 
-
+  - "stable"
 cache:
-  npm: true
   directories:
-    - node_modules
-
+  - node_modules
 script:
-  - npm run deploy
-
-
+  - npm run build
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GIT_TOKEN
-  keep-history: true
+  skip_cleanup: true
+  github_token: $GIT_TOKEN
+  local_dir: build
   on:
     branch: master
