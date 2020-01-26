@@ -10,7 +10,6 @@ addons:
   chrome: stable
 
 before_script:
-  - npm install
   - npm install gh-pages 
 
 cache:
