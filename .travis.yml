@@ -2,10 +2,6 @@ language: node_js
 node_js:
  - "12.13.1"
 
-branches:
-  only:
-    - master
-
 addons:
   chrome: stable
 
@@ -24,9 +20,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $token
-  github-username: $username
-  github-password: $password
+  github-token: $crp
   keep-history: true
-  local-dir: ./build
   on:
+    branch: master
