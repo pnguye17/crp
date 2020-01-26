@@ -24,7 +24,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GH_TOKEN
+  github-token: $token
   github-username: $username
   github-password: $password
   keep-history: true
